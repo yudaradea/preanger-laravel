@@ -16,26 +16,25 @@
                     >
                         Preanger institute is Lorem, ipsum dolor Lorem ipsum dolor sit amet.
                     </h1>
-                    <p
+                    <div
                         class="mt-4 text-sm leading-relaxed text-justify text-gray-500 dark:text-neutral-400 lg:text-start"
                     >
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quis repellendus obcaecati natus
-                        quae totam blanditiis facere provident enim eveniet earum consectetur similique perspiciatis,
-                        quibusdam eligendi quisquam. Praesentium sequi alias maiores laborum, quis quibusdam est
-                        dignissimos, exercitationem voluptatum ducimus saepe iusto laudantium at reiciendis dolorem ea
-                        eos! Fugit illo consequuntur dolorem accusantium voluptatem similique est, commodi tempore
-                        voluptates doloremque quibusdam!
-                    </p>
+                        <p class="mb-2">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quis repellendus obcaecati
+                            natus quae totam blanditiis facere provident enim eveniet earum consectetur similique
+                            perspiciatis, quibusdam eligendi quisquam. Praesentium sequi alias maiores laborum.
+                        </p>
+
+                        <p>
+                            quis quibusdam est dignissimos, exercitationem voluptatum ducimus saepe iusto laudantium at
+                            reiciendis dolorem ea eos! Fugit illo consequuntur dolorem accusantium voluptatem similique
+                            est, commodi tempore voluptates doloremque quibusdam!
+                        </p>
+                    </div>
 
                     <!-- Buttons -->
-                    <div class="grid w-full gap-3 mt-8 md:inline-flex">
-                        <a
-                            class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-white bg-blue-600 border border-transparent rounded-lg gap-x-2 hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-                            href="#"
-                        >
-                            View More
-                            <i class="text-lg mt-[1px] ti ti-arrow-right"></i>
-                        </a>
+                    <div class="grid w-full gap-3 mt-8 lg:mt-10 md:inline-flex">
+                        <x-frontend.button href="about.html">View More</x-frontend.button>
                     </div>
                     <!-- End Buttons -->
                 </div>
@@ -58,4 +57,6 @@
             </div>
         </div>
     </div>
+
+    <x-frontend.home.why-us />
 </section>

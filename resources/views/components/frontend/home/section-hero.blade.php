@@ -16,13 +16,7 @@
 
                 <!-- Buttons -->
                 <div class="grid w-full gap-3 mt-8 md:inline-flex">
-                    <a
-                        class="inline-flex items-center justify-center px-4 py-3 text-sm font-semibold text-white bg-blue-600 border border-transparent rounded-lg gap-x-2 hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-                        href="#"
-                    >
-                        Get started
-                        <i class="text-lg mt-[1px] ti ti-arrow-right"></i>
-                    </a>
+                    <x-frontend.button href="#about">Get Started</x-frontend.button>
                 </div>
                 <!-- End Buttons -->
             </div>
