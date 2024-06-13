@@ -22,6 +22,7 @@ export default {
             },
             colors: {
                 'text-primary': '#111c2d',
+                'color-black': '#080C2E',
             },
         },
         container: {

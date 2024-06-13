@@ -15,7 +15,7 @@
                 </p>
 
                 <!-- Buttons -->
-                <div class="grid w-full gap-3 mt-8 md:inline-flex">
+                <div class="grid w-full gap-3 mt-8 md:flex">
                     <x-frontend.button href="#about">Get Started</x-frontend.button>
                 </div>
                 <!-- End Buttons -->

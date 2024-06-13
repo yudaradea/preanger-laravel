@@ -12,4 +12,6 @@
     <x-frontend.home.section-team />
 
     <x-frontend.home.section-faq />
+
+    <x-frontend.home.section-contact />
 </x-frontend.layout-app>

@@ -1,11 +1,15 @@
 <section id="about" class="relative bg-gray-50">
     <div class="container py-10 md:py-14">
-        <div class="flex justify-center">
+        <div class="flex flex-col items-center justify-center">
             <h1
                 class="inline-flex items-center px-2 pb-2 text-2xl font-bold text-center uppercase border-b border-blue-600 md:pb-3 md:border-b-2 md:text-4xl xl:text-5xl"
             >
                 About Us
             </h1>
+
+            <p class="mt-4 text-sm text-center text-gray-600 lg:text-base lg:text-start dark:text-neutral-400">
+                Lorem ipsum dolor sit amet consectetur.
+            </p>
         </div>
 
         <div class="pt-12 md:pt-20">
