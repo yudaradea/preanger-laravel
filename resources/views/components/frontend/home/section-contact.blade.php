@@ -7,7 +7,7 @@
 
         <div class="flex flex-col mt-6 lg:flex-row gap-y-6 lg:mt-10 lg:justify-between">
             <div
-                class="lg:flex lg:flex-col px-[10px] py-6 bg-white border-t-2 border-b-2 border-blue-600 shadow-md md:px-4 space-y-7 md:space-y-8 lg:w-[40%]"
+                class="lg:flex lg:flex-col px-[12px] py-6 bg-white border-t-2 border-b-2 border-blue-600 shadow-md md:px-4 space-y-7 md:space-y-8 lg:w-[40%]"
             >
                 {{-- item 1 --}}
                 <div class="flex items-center w-full gap-3 md:gap-4">
@@ -71,71 +71,35 @@
             <div
                 class="lg:w-[58%] py-6 md:py-8 px-4 md:px-6 bg-white shadow-md border-t-2 border-b-2 border-blue-600 lg:flex lg:flex-col"
             >
-                <div class="grid gap-5 md:gap-6 md:grid-cols-2">
-                    <div class="grid gap-2 md:gap-3">
-                        <label
-                            for="name"
-                            class="text-sm tracking-wide border-gray-400 rounded-lg md:text-base text-slate-500"
-                        >
-                            Your Name
-                        </label>
-                        <div class="max-w-sm space-y-3">
-                            <input
-                                type="text"
-                                class="block w-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                                placeholder=""
-                            />
-                        </div>
-                    </div>
+                <h3 class="text-xl font-semibold lg:text-2xl text-slate-800">Any Questions?</h3>
+                <div class="grid gap-5 mt-6 lg:mt-8 md:gap-x-6 md:gap-y-10 md:grid-cols-2">
+                    <x-frontend.input type="text" placeholder="Name">
+                        <i class="text-2xl ti ti-user"></i>
+                    </x-frontend.input>
 
-                    <div class="grid gap-2 md:gap-3">
-                        <label
-                            for="name"
-                            class="text-sm tracking-wide border-gray-400 rounded-lg md:text-base text-slate-500"
-                        >
-                            Your Email
-                        </label>
-                        <div class="max-w-sm space-y-3">
-                            <input
-                                type="email"
-                                class="block w-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                                placeholder=""
-                            />
-                        </div>
-                    </div>
+                    <x-frontend.input type="email" placeholder="Email">
+                        <i class="text-2xl ti ti-mail"></i>
+                    </x-frontend.input>
+
+                    <x-frontend.input type="text" placeholder="Phone">
+                        <i class="text-2xl ti ti-phone"></i>
+                    </x-frontend.input>
+
+                    <x-frontend.input type="email" placeholder="Subject">
+                        <i class="text-2xl ti ti-book"></i>
+                    </x-frontend.input>
 
                     <div class="grid gap-2 md:gap-3 md:col-span-2">
-                        <label
-                            for="name"
-                            class="text-sm tracking-wide border-gray-400 rounded-lg md:text-base text-slate-500"
-                        >
-                            Subject
-                        </label>
-                        <div class="space-y-3">
-                            <input
-                                type="text"
-                                class="block w-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                                placeholder=""
-                            />
-                        </div>
-                    </div>
-
-                    <div class="grid gap-2 md:gap-3 md:col-span-2">
-                        <label
-                            for="name"
-                            class="text-sm tracking-wide border-gray-400 rounded-lg md:text-base text-slate-500"
-                        >
-                            Message
-                        </label>
                         <div class="space-y-3">
                             <textarea
-                                class="block w-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                class="block w-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-gray-200 focus:ring-0"
                                 rows="6"
+                                placeholder="messages"
                             ></textarea>
                         </div>
                     </div>
 
-                    <div class="grid w-full mt-2 md:flex lg:flex-1 lg:col-span-2 lg:justify-center lg:mt-4">
+                    <div class="grid w-full mt-2 md:flex lg:flex-1 lg:col-span-2 lg:justify-center lg:mt-3">
                         <button
                             href=""
                             class="px-6 py-3 text-sm text-white transition-colors duration-200 bg-blue-500 rounded-lg shadow-sm hover:bg-blue-600 lg:py-4"
