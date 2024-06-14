@@ -33,13 +33,21 @@
                         Home
                     </x-frontend.mobile-nav-link>
 
-                    <x-frontend.mobile-nav-link href="{{ route('home') }}">About</x-frontend.mobile-nav-link>
+                    <x-frontend.mobile-nav-link href="{{ route('about') }}" :active="request()->routeIs('about')">
+                        About
+                    </x-frontend.mobile-nav-link>
 
-                    <x-frontend.mobile-nav-link href="{{ route('home') }}">Project</x-frontend.mobile-nav-link>
+                    <x-frontend.mobile-nav-link href="{{ route('program') }}" :active="request()->routeIs('program')">
+                        Program
+                    </x-frontend.mobile-nav-link>
 
-                    <x-frontend.mobile-nav-link href="{{ route('home') }}">Blog</x-frontend.mobile-nav-link>
+                    <x-frontend.mobile-nav-link href="{{ route('team') }}" :active="request()->routeIs('team')">
+                        Team
+                    </x-frontend.mobile-nav-link>
 
-                    <x-frontend.mobile-nav-link href="{{ route('home') }}">Contact</x-frontend.mobile-nav-link>
+                    <x-frontend.mobile-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                        Contact
+                    </x-frontend.mobile-nav-link>
                 </div>
             </div>
         </div>

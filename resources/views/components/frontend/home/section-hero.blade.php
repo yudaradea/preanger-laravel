@@ -1,4 +1,4 @@
-<section id="hero">
+<section id="hero" {{ $attributes }}>
     <div class="container py-12 md:py-20">
         <div class="grid flex-col-reverse gap-10 md:grid-cols-2 md:gap-8 xl:gap-20 md:items-center">
             <div class="order-2 md:order-1">

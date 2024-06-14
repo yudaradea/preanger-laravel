@@ -1,16 +1,9 @@
-<section id="prgram" class="relative">
+<section id="program" {{ $attributes->merge(['class' => 'relative']) }}>
     <div class="container py-10 md:py-14">
-        <div class="flex flex-col items-center justify-center">
-            <h1
-                class="inline-flex items-center px-2 pb-2 text-2xl font-bold text-center uppercase border-b border-blue-600 md:pb-3 md:border-b-2 md:text-4xl xl:text-5xl"
-            >
-                Our Program
-            </h1>
-            <p class="mt-4 text-sm text-center text-gray-600 lg:text-base lg:text-start dark:text-neutral-400">
-                We've helped some great companies brand, design and get to market.
-            </p>
-        </div>
-
+        <x-frontend.section-title>
+            <x-slot name="title">Our Program</x-slot>
+            <x-slot name="subtitle">We've helped some great companies brand, design and get to market.</x-slot>
+        </x-frontend.section-title>
         <div class="mt-12 lg:mt-16">
             <!-- Grid -->
             <div class="grid gap-6 mb-10 md:grid-cols-2 lg:grid-cols-3 lg:mb-14">
@@ -98,7 +91,8 @@
                         <p class="text-gray-600 dark:text-neutral-400">Want to see more?</p>
                         <a
                             class="flex items-center font-medium text-blue-600 decoration-2 dark:text-blue-500 group"
-                            href="../docs/index.html"
+                            href="{{ route('program') }}"
+                            wire:navigate
                         >
                             <p class="hover:underline">Go here</p>
                             <i

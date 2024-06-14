@@ -1,15 +1,9 @@
-<section id="contact" class="bg-gray-50">
+<section id="contact" {{ $attributes->merge(['class' => 'relative']) }}>
     <div class="container py-10 md:py-14">
-        <div class="flex flex-col items-center justify-center">
-            <h1
-                class="inline-flex items-center px-2 pb-2 text-2xl font-bold text-center uppercase border-b border-blue-600 md:pb-3 md:border-b-2 md:text-4xl xl:text-5xl"
-            >
-                Contact
-            </h1>
-            <p class="mt-4 text-sm text-center text-gray-600 lg:text-base lg:text-start dark:text-neutral-400">
-                Lorem ipsum dolor sit amet consectetur.
-            </p>
-        </div>
+        <x-frontend.section-title>
+            <x-slot name="title">Contact</x-slot>
+            <x-slot name="subtitle">Lorem ipsum dolor sit amet consectetur.</x-slot>
+        </x-frontend.section-title>
 
         <div class="flex flex-col mt-6 lg:flex-row gap-y-6 lg:mt-10 lg:justify-between">
             <div

@@ -16,13 +16,21 @@
                 Home
             </x-frontend.nav-link>
 
-            <x-frontend.nav-link href="{{ route('home') }}">About</x-frontend.nav-link>
+            <x-frontend.nav-link href="{{ route('about') }}" :active="request()->routeIs('about')">
+                About
+            </x-frontend.nav-link>
 
-            <x-frontend.nav-link href="{{ route('home') }}">Project</x-frontend.nav-link>
+            <x-frontend.nav-link href="{{ route('program') }}" :active="request()->routeIs('program')">
+                Program
+            </x-frontend.nav-link>
 
-            <x-frontend.nav-link href="{{ route('home') }}">Blog</x-frontend.nav-link>
+            <x-frontend.nav-link href="{{ route('team') }}" :active="request()->routeIs('team')">
+                Team
+            </x-frontend.nav-link>
 
-            <x-frontend.nav-link href="{{ route('home') }}">Contact</x-frontend.nav-link>
+            <x-frontend.nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                Contact
+            </x-frontend.nav-link>
         </div>
 
         {{-- Mobile --}}

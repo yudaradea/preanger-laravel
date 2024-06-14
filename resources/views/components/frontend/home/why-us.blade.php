@@ -1,11 +1,7 @@
 <!-- Icon Blocks -->
-<div class="container pt-2 pb-10 lg:pb-16 lg:pt-10">
+<div class="container pt-6 pb-10 lg:pb-16 lg:pt-10">
     <div class="flex justify-center mb-6 md:mb-8">
-        <h1
-            class="inline-flex items-center px-2 pb-1 text-xl font-bold text-center border-b border-blue-600 md:pb-2 md:border-b-2 md:text-2xl xl:text-3xl"
-        >
-            Why Choose Us
-        </h1>
+        <h1 class="inline-flex items-center text-xl font-bold text-center md:text-2xl">Why Choose Us</h1>
     </div>
     <div class="grid items-center gap-6 sm:grid-cols-2 lg:grid-cols-3 md:gap-10">
         <!-- Card -->

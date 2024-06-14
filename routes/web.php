@@ -7,6 +7,22 @@ Route::get('/', function () {
     return view('frontend.pages.home');
 })->name('home');
 
+Route::get('/about', function () {
+    return view('frontend.pages.about');
+})->name('about');
+
+Route::get('/program', function () {
+    return view('frontend.pages.program');
+})->name('program');
+
+Route::get('/team', function () {
+    return view('frontend.pages.team');
+})->name('team');
+
+Route::get('/contact', function () {
+    return view('frontend.pages.contact');
+})->name('contact');
+
 
 
 Route::middleware([
