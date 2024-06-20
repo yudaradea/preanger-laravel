@@ -25,12 +25,12 @@
             <div class="flex justify-end order-1 md:order-2">
                 <div class="relative w-full ms-4 2xl:w-4/5">
                     <img
-                        class="w-full h-[350px] md:h-[400px] xl:h-[550px] 2xl:h-[600px] rounded-3xl object-cover"
+                        class="w-full h-[350px] md:h-[400px] xl:h-[550px] 2xl:h-[600px] rounded-3xl object-cover relative z-[1]"
                         src="{{ asset('assets/img/hero-img.jpg') }}"
                         alt="Image Hero"
                     />
                     <div
-                        class="absolute inset-0 -z-[1] bg-gradient-to-tr from-blue-500 size-full rounded-3xl mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-neutral-800 dark:via-neutral-900/0 dark:to-neutral-900/0"
+                        class="absolute inset-0 mt-4 -mb-4 bg-gradient-to-tr from-blue-500 size-full rounded-3xl me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-neutral-800 dark:via-neutral-900/0 dark:to-neutral-900/0"
                     ></div>
                 </div>
             </div>

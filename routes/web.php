@@ -23,6 +23,9 @@ Route::get('/contact', function () {
     return view('frontend.pages.contact');
 })->name('contact');
 
+Route::get('/program/{id}', function () {
+    return view('frontend.pages.single-program');
+})->name('single-program');
 
 
 Route::middleware([

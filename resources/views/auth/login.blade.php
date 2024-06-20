@@ -12,7 +12,7 @@
 
         <div class="flex flex-col items-center justify-center py-6">
             <x-backend.logo href="{{ route('home') }}" />
-            <p class="mt-2 text-sm text-center text-gray-400">Admin Login Page</p>
+            <p class="mt-4 text-sm text-center text-gray-400">Admin Login Page</p>
         </div>
         <x-validation-errors class="mb-4" />
 

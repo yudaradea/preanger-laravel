@@ -5,7 +5,8 @@
             <!-- Card -->
             <a
                 class="flex flex-col transition bg-white border shadow-sm group rounded-xl hover:shadow-md dark:bg-neutral-900 dark:border-neutral-800"
-                href="#"
+                href="{{ route('single-program', ['id' => 1]) }}"
+                wire:navigate
             >
                 <div class="w-full h-64 lg:h-80">
                     <img
@@ -220,18 +221,18 @@
         <!-- Card -->
         <div class="flex justify-center">
             <div class="grid grid-cols-5 gap-2">
-                <div class="h-12 w-12 cursor-pointer rounded-md border flex justify-center items-center">
-                    <i class="ti ti-arrow-left text-lg"></i>
+                <div class="flex items-center justify-center w-12 h-12 border rounded-md cursor-pointer">
+                    <i class="text-lg ti ti-arrow-left"></i>
                 </div>
-                <div class="h-12 w-12 cursor-pointer rounded-md border flex justify-center items-center">1</div>
+                <div class="flex items-center justify-center w-12 h-12 border rounded-md cursor-pointer">1</div>
                 <div
-                    class="h-12 w-12 cursor-pointer rounded-md bg-blue-600 text-white flex justify-center items-center"
+                    class="flex items-center justify-center w-12 h-12 text-white bg-blue-600 rounded-md cursor-pointer"
                 >
                     2
                 </div>
-                <div class="h-12 w-12 cursor-pointer rounded-md border flex justify-center items-center">3</div>
-                <div class="h-12 w-12 cursor-pointer rounded-md border flex justify-center items-center">
-                    <i class="ti ti-arrow-right text-lg"></i>
+                <div class="flex items-center justify-center w-12 h-12 border rounded-md cursor-pointer">3</div>
+                <div class="flex items-center justify-center w-12 h-12 border rounded-md cursor-pointer">
+                    <i class="text-lg ti ti-arrow-right"></i>
                 </div>
             </div>
         </div>

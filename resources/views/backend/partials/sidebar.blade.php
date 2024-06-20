@@ -2,7 +2,11 @@
 <!-- Start Vertical Layout Sidebar -->
 <!-- ---------------------------------- -->
 <div class="p-4">
-    <x-backend.logo href="{{ route('admin.dashboard') }}" />
+    @php
+        $logoAttributes = ['class' => 'lg:w-[150px]'];
+    @endphp
+
+    <x-backend.logo href="{{ route('admin.dashboard') }}" :logoAttributes="$logoAttributes" />
 </div>
 <div class="scroll-sidebar" data-simplebar="">
     <nav class="flex flex-col w-full px-4 mt-5 sidebar-nav">
